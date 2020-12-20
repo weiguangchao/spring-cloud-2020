@@ -1,0 +1,43 @@
+server:
+  port: 8411
+  servlet:
+    context-path: /stream
+
+eureka:
+  instance:
+    #eureka中实例名称
+    instance-id: cloud-stream-consumer8411
+    #eureka中实例IP
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka3001.com:3001/eureka/,http://eureka3002.com:3002/eureka/
+
+spring:
+  application:
+    name: cloud-stream-consumer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        #channel name
+        #org.springframework.cloud.stream.messaging.Sink.INPUT对应
+        input:
+          destination: my_test_queue
+        #自定义channel
+        order_input:
+          destination: my_order_queue
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    com.github.cloud.stream.service: debug
