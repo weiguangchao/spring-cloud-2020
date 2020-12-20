@@ -1,12 +1,12 @@
 server:
-  port: 8411
+  port: 8412
   servlet:
     context-path: /stream
 
 eureka:
   instance:
     #eureka中实例名称
-    instance-id: cloud-stream-consumer8411
+    instance-id: cloud-stream-consumer8412
     #eureka中实例IP
     prefer-ip-address: true
   client:

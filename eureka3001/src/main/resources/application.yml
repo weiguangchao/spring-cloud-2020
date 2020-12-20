@@ -4,12 +4,18 @@ server:
 eureka:
   instance:
     hostname: eureka3001.com
+    #eureka中实例名称
+    instance-id: eureka-server3001
+    #eureka中实例IP
+    prefer-ip-address: true
   client:
-    register-with-eureka: false
+    #是否注册eureka自身
+    register-with-eureka: true
+    #是否从其他eureka节点获取服务注册信息
     fetch-registry: true
     service-url:
       defaultZone: http://eureka3002.com:3002/eureka/
 
 spring:
   application:
-    name: eureka-server3001
+    name: eureka-server

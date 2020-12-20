@@ -29,6 +29,7 @@
         <module>config-client3346</module>
         <module>stream-provider8410</module>
         <module>stream-consumer8411</module>
+        <module>stream-consumer8412</module>
     </modules>
 
     <properties>

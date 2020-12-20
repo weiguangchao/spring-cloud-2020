@@ -53,5 +53,15 @@ config-client3346：Spring Cloud Config客户端，注册到eureka，使用prod�
 
 
 
+stream-consumer8410：Spring Cloud Stream RabbitMQ，生产者，注册到eureka
+
+stream-consumer8411：Spring Cloud Stream RabbitMQ，消费者，注册到eureka
+
+Stream-consumer8412：Spring Cloud Stream RabbitMQ，消费者，注册到eureka	
+
+
+
+
+
 
 
