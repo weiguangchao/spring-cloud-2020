@@ -19,9 +19,18 @@
         <module>address8002</module>
         <module>address8003</module>
         <module>order7003</module>
+        <module>order-openfeign7004</module>
+        <module>address-hystrix8004</module>
+        <module>gateway888</module>
+        <module>hystrix-dashboard9999</module>
+        <module>config9898</module>
+        <module>config-client3344</module>
+        <module>config-client3345</module>
+        <module>config-client3346</module>
     </modules>
 
     <properties>
+        <hutool.version>5.5.4</hutool.version>
         <zookeeper.version>3.6.2</zookeeper.version>
         <spring-boot.version>2.3.5.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>

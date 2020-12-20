@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      fail-fast: true
+      #配置中心地址
+      uri: http://localhost:9898
+      #分支
+      label: main
+      #profile name
+      name: application
+
+
+
+

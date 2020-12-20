@@ -1,0 +1,24 @@
+server:
+  port: 888
+
+eureka:
+  instance:
+    #eureka中实例名称
+    instance-id: cloud-gateway888
+    #eureka中实例IP
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka3001.com:3001/eureka/,http://eureka3002.com:3002/eureka/
+
+spring:
+  application:
+    name: cloud-gateway
+  #配置网关路由规则
+  cloud:
+    gateway:
+      routes:
+        - id: address_route
+          uri: lb://cloud-address
+          predicates:
+            - Path=/address/**

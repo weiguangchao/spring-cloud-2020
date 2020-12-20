@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+eureka:
+  instance:
+    #eureka中实例名称
+    instance-id: hystrix-dashboard9999
+    #eureka中实例IP
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka3001.com:3001/eureka/,http://eureka3002.com:3002/eureka/
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'

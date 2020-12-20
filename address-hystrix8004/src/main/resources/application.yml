@@ -1,0 +1,28 @@
+server:
+  port: 8004
+  servlet:
+    context-path: /address
+
+eureka:
+  instance:
+    #eureka中实例名称
+    instance-id: cloud-address8004
+    #eureka中实例IP
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka3001.com:3001/eureka/,http://eureka3002.com:3002/eureka/
+
+spring:
+  application:
+    name: cloud-address
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    com.github.cloud.address.controller.*: debug
