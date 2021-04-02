@@ -67,7 +67,7 @@ nacos-config8601：Spring Cloud Alibaba Nacos Config Client，注册到nacos
 
 
 
-
+cloud-bus: Spring Cloud Bus使用
 
 
 
