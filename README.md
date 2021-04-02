@@ -33,7 +33,7 @@ address8001：address服务，注册到eureka中
 
 address8002：address服务，注册到zookeeper中
 
-address8003：address服务，注册到consu中
+address8003：address服务，注册到consul中
 
 address-hystrix8004：address服务，使用hystrix进行熔断限流，注册到eureka中
 
