@@ -37,6 +37,8 @@ address8003：address服务，注册到consu中
 
 address-hystrix8004：address服务，使用hystrix进行熔断限流，注册到eureka中
 
+address-sentinel8005：address服务，使用Sentinel进行熔断限流，注册到nacos中
+
 
 
 hystrix-dashboard9999：hystrix dashboard，注册到eureka中
@@ -57,7 +59,15 @@ stream-consumer8410：Spring Cloud Stream RabbitMQ，生产者，注册到eureka
 
 stream-consumer8411：Spring Cloud Stream RabbitMQ，消费者，注册到eureka
 
-Stream-consumer8412：Spring Cloud Stream RabbitMQ，消费者，注册到eureka	
+stream-consumer8412：Spring Cloud Stream RabbitMQ，消费者，注册到eureka	
+
+
+
+nacos-config8601：Spring Cloud Alibaba Nacos Config Client，注册到nacos
+
+
+
+
 
 
 

@@ -1,0 +1,27 @@
+#nacos配置文件名
+#data-id 配置
+#${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.file-extension:properties}
+spring:
+  #profiles:
+  #  active: dev
+  cloud:
+    nacos:
+      config:
+        #自定义nacos data-id
+        #配置文件拓展名
+        #file-extension: yml
+        #namespace
+        #namespace: f59dd126-9617-4737-b145-ca5d519b650e
+        #group
+        #group: GR_GROUP
+        #nacos服务器地址
+        server-addr: 127.0.0.1:8848
+        #自动刷新开关
+        refresh-enabled: true
+        extension-configs:
+          - dataId: nacos-config.yml
+            group: NAME_GROUP
+            refresh: true
+          - dataId: nacos-config.yml
+            group: AGE_GROUP
+            refresh: true

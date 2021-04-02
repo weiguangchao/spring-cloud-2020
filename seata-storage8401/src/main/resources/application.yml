@@ -1,0 +1,9 @@
+server:
+  port: 8401
+  servlet:
+    context-path: /storaage
+
+spring:
+  application:
+    name: cloud-storaage
+

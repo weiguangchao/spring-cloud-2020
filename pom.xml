@@ -30,9 +30,17 @@
         <module>stream-provider8410</module>
         <module>stream-consumer8411</module>
         <module>stream-consumer8412</module>
+        <module>nacos-config8601</module>
+        <module>nacos-config8602</module>
+        <module>address-sentinel8005</module>
+        <module>seata-storage8401</module>
+        <module>seata-order8501</module>
+        <module>seata-business8601</module>
+        <module>cloud-bus</module>
     </modules>
 
     <properties>
+        <druid.version>1.2.4</druid.version>
         <hutool.version>5.5.4</hutool.version>
         <zookeeper.version>3.6.2</zookeeper.version>
         <spring-boot.version>2.3.5.RELEASE</spring-boot.version>
